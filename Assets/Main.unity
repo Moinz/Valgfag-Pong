@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 261233541}
   - component: {fileID: 261233540}
   m_Layer: 0
-  m_Name: Enemy Boy
+  m_Name: Right Paddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3272fb26706d2a74d82e623544d22a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0
+  Speed: 15
 --- !u!54 &261233541
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 685479082}
   - component: {fileID: 685479081}
   m_Layer: 0
-  m_Name: Horizontal Wall
+  m_Name: Horizontal Wall Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 866765569}
   - component: {fileID: 866765568}
   m_Layer: 0
-  m_Name: Horizontal Wall
+  m_Name: Horizontal Wall Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -571,7 +571,7 @@ GameObject:
   - component: {fileID: 923614001}
   - component: {fileID: 923614000}
   m_Layer: 0
-  m_Name: Vertical Wall
+  m_Name: Vertical Wall Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -655,7 +655,7 @@ GameObject:
   - component: {fileID: 1023924340}
   - component: {fileID: 1023924339}
   m_Layer: 0
-  m_Name: Vertical Wall
+  m_Name: Vertical Wall Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -806,7 +806,7 @@ GameObject:
   - component: {fileID: 1609219403}
   - component: {fileID: 1609219402}
   m_Layer: 0
-  m_Name: Best Boy
+  m_Name: Left Paddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -823,7 +823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3272fb26706d2a74d82e623544d22a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 30
+  Speed: 15
 --- !u!54 &1609219403
 Rigidbody:
   m_ObjectHideFlags: 0
