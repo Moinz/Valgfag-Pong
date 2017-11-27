@@ -8,6 +8,7 @@ public class PaddleController : MonoBehaviour // Here our class is inhereting Mo
 {
     private Rigidbody _rigidbody; // Here we are creating a variable of the Rigidbody Component, which allows us to programmatically access all the functions and data in the component
     public float Speed; // Our speed variable, that allows us to control how fast the paddle will go!
+    public string InputString;
     /*
      * Start is a function that is run whenever a GameObject that has this script "Starts". 
      * So whenever you instantiate this class or if you have it attached to a gameobject and you press play!
@@ -28,13 +29,18 @@ public class PaddleController : MonoBehaviour // Here our class is inhereting Mo
          * We are then multiplying it by our predefined variable Speed to make it go faster, since Input.GetAxis will only return 1, 0 or -1!
          * NB: If you are recieving input from a gamepad controller the Input.GetAxis will probably return values like 0.2, -0.5, 0.7 etc.
          */
-        float yVelocity = Input.GetAxis("Vertical") * Speed;
+        float yVelocity = Input.GetAxis(InputString) * Speed;
         /*
          * Here we are accessing the variable velocity in the Rigidbody Component. If the velocity is not 0, the rigidbody component will move the GameObject based on the velocity variable!
          * So if we have a X velocity of 2, we will move the GameObject to the right, after the Component has made its calculations. 
          * We are basically moving our GameObject along the Y position based on the Input that the player is giving! 
          */
-        _rigidbody.velocity = new Vector3(0, yVelocity, 0);
-
+        Move(new Vector3(0, yVelocity, 0));
 	}
+
+    public void Move(Vector3 moveAmount)
+    {
+        _rigidbody.velocity = moveAmount;
+    }
+
 }
